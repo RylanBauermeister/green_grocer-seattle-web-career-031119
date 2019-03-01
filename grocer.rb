@@ -4,12 +4,7 @@ def consolidate_cart(cart)
   # code here
   result = {}
   cart.uniq.each do |item|
-<<<<<<< HEAD
     item.values.first[:count] = cart.count(item)
-=======
-    binding.pry
-    item[:count] = cart.count(item)
->>>>>>> f6723a8308a7c3210566f4110bbd75c814e2b335
     result[item.keys.first] = item.values.first
   end
   result
